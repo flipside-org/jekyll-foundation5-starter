@@ -1,0 +1,16 @@
+#System files
+.project
+.DS_Store
+
+#personal resources folder
+personal_res
+
+#sass
+.sass-cache
+
+#node and bower
+node_modules
+src/bower_components
+
+# jekyll folder
+public/_site
