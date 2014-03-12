@@ -117,10 +117,12 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-jekyll');
   
   // Register tasks.
-  grunt.registerTask('default', ['compass:dev', 'jshint:dev', 'uglify', 'jekyll:generate']);
+  grunt.registerTask('build', ['compass:dev', 'jshint:dev', 'uglify', 'jekyll:generate']);
   
   grunt.registerTask('prod', ['clean', 'compass:prod', 'jshint:prod', 'uglify']);
   
   grunt.registerTask('jk', ['jekyll:server']);
+
+  grunt.registerTask('default', ['build', 'watch']);
 
 };
